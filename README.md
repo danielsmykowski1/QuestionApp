@@ -11,7 +11,8 @@ npm install
 ```
 after cloning the repository.
 
-command for run:
+## Commands to run the app
+
 For iOS
 ```
 npx react-native run-ios
