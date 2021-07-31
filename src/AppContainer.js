@@ -51,7 +51,6 @@ class AppContainer extends Component {
     const questions = await fetch(Config.API_URL)
       .then(response => response.json())
       .then(json => {
-        console.log('results:', json.results);
         return json.results;
       })
       .catch((error) => {
@@ -114,7 +113,7 @@ class AppContainer extends Component {
         timeString: "0:20",
         currentValue: ""
       });
-      
+
       this.timer = setInterval(() => {
         const { timeLeft, currentValue } = this.state;
 
