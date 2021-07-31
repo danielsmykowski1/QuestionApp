@@ -55,7 +55,10 @@ export default Question = (props) => {
       </Radio.Group>
       <View style={styles.buttonWrapper}>
         <TouchableOpacity
-          onPress={() => props.nextQuestion(value)}
+          onPress={() => {
+            props.nextQuestion(value);
+            setValue("");
+          }}
         >
           <Text>{ questionIndex == 9 ? "Show Result" : "Next Question" }</Text>
         </TouchableOpacity>
